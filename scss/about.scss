@@ -1,0 +1,66 @@
+.about {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 500px;
+    margin: 100px auto 0 auto;
+    background-color: var(--theme-dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+        width: 60%;
+        color: var(--theme-cloud);
+        padding: 30px;
+
+        h1 {
+            font-family: var(--gsr);
+            font-size: 36px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: var(--gsr);
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: 80%;
+            font-family: var(--gsli);
+            font-size: 18px;
+            margin: 0 auto 16px auto;
+        }
+    }
+
+    .right {
+        width: 40%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .top {
+            width: 400px;
+            height: 250px;
+            margin-bottom: 20px;
+            background-image: url(../images/family.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bottom {
+            width: 400px;
+            height: 250px;
+            background-image: url(../images/farmfields.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

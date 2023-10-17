@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Gill-Sans-Bold;
+  src: url(fonts/Gill-Sans-Bold.otf);
+}
+@font-face {
+  font-family: Gill-Sans-Italic;
+  src: url(fonts/Gill-Sans-Italic.otf);
+}
+@font-face {
+  font-family: Gill-Sans-Light;
+  src: url(fonts/Gill-Sans-Light.otf);
+}
+@font-face {
+  font-family: Gill-Sans-Light-Italic;
+  src: url(fonts/Gill-Sans-Light-Italic.otf);
+}
+@font-face {
+  font-family: Gill-Sans-Regular;
+  src: url(fonts/Gill-Sans-Regular.otf);
+}
+@font-face {
+  font-family: Gill-Sans-SemiBold-Italic;
+  src: url(fonts/Gill-Sans-SemiBold-Italic.otf);
+}
+@font-face {
+  font-family: PTSerif-Regular;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+:root {
+  --theme-sky: #87ceeb;
+  --theme-cloud: #f5f5f5;
+  --theme-light-green: #BBD443;
+  --theme-dark-green: #79A529;
+  --theme-dirt: #88674e;
+  --gsb: Gill-Sans-Bold;
+  --gsi: Gill-Sans-Italic;
+  --gsl: Gill-Sans-Light;
+  --gsli: Gill-Sans-Light-Italic;
+  --gsr: Gill-Sans-Regular;
+  --gssi: Gill-Sans-SemiBold-Italic;
+  --pts: PTSerif-Regular;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+header .header-wrapper {
+  width: 100%;
+  height: 100px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--theme-sky);
+}
+header .header-wrapper .logo {
+  height: 100px;
+}
+header .header-wrapper .logo img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header-wrapper .right {
+  padding-top: 17px;
+  height: 100%;
+}
+header .header-wrapper .right h1 {
+  color: var(--theme-cloud);
+  font-family: var(--gsb);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 0;
+}
+header .header-wrapper .right nav {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-family: var(--gsl);
+}
+header .header-wrapper .right nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme-cloud);
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--theme-dirt);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer h3 {
+  font-size: 20px;
+  font-family: var(--gsl);
+  color: var(--theme-cloud);
+  margin-bottom: 0;
+}
+
+.home {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 100px auto 0 auto;
+  background-color: var(--theme-dark-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .left {
+  width: 60%;
+  color: var(--theme-cloud);
+  padding: 30px;
+}
+.home .left h1 {
+  font-family: var(--gsr);
+  font-size: 36px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.home .left h3 {
+  font-family: var(--gsr);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home .left p {
+  width: 80%;
+  font-family: var(--gsli);
+  font-size: 18px;
+  margin: 0 auto 16px auto;
+}
+.home .right {
+  width: 40%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .right .top {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(../images/corn2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .right .bottom {
+  width: 400px;
+  height: 250px;
+  background-image: url(../images/farm1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 100px auto 0 auto;
+  background-color: var(--theme-dark-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .left {
+  width: 60%;
+  color: var(--theme-cloud);
+  padding: 30px;
+}
+.about .left h1 {
+  font-family: var(--gsr);
+  font-size: 36px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.about .left h3 {
+  font-family: var(--gsr);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about .left p {
+  width: 80%;
+  font-family: var(--gsli);
+  font-size: 18px;
+  margin: 0 auto 16px auto;
+}
+.about .right {
+  width: 40%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .right .top {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(../images/family.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .right .bottom {
+  width: 400px;
+  height: 250px;
+  background-image: url(../images/farmfields.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tours {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 100px auto 0 auto;
+  background-color: var(--theme-dark-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours .left {
+  width: 60%;
+  color: var(--theme-cloud);
+  padding: 30px;
+}
+.tours .left h1 {
+  font-family: var(--gsr);
+  font-size: 36px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.tours .left h3 {
+  font-family: var(--gsr);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.tours .left p {
+  width: 80%;
+  font-family: var(--gsli);
+  font-size: 18px;
+  margin: 0 auto 16px auto;
+}
+.tours .right {
+  width: 40%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tours .right .top {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(../images/chickens.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tours .right .bottom {
+  width: 400px;
+  height: 250px;
+  background-image: url(../images/dirt.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 100px auto 0 auto;
+  background-color: var(--theme-dark-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .left {
+  width: 60%;
+  color: var(--theme-cloud);
+  padding: 30px;
+}
+.contact .left h1 {
+  font-family: var(--gsr);
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.contact .left h3 {
+  font-family: var(--gsr);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.contact .left form {
+  width: 100%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact .left form input {
+  width: 70%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 21px;
+  border: none;
+  background-color: var(--theme-light-green);
+  font-family: var(--pts);
+  font-size: 18px;
+  color: var(--theme-cloud);
+}
+.contact .left form input::-webkit-input-placeholder {
+  color: var(--theme-cloud);
+}
+.contact .left form input::-moz-placeholder {
+  color: var(--theme-cloud);
+}
+.contact .left form input:-ms-input-placeholder {
+  color: var(--theme-cloud);
+}
+.contact .left form input::-ms-input-placeholder {
+  color: var(--theme-cloud);
+}
+.contact .left form input::placeholder {
+  color: var(--theme-cloud);
+}
+.contact .left form a {
+  text-decoration: none;
+  margin-top: 10px;
+}
+.contact .left form a .submitBTN {
+  width: 200px;
+  height: 60px;
+  padding: 16px;
+  background-color: var(--theme-light-green);
+  font-family: var(--pts);
+  font-size: 22px;
+  color: var(--theme-cloud);
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact .right {
+  width: 40%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .right .top {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(../images/corn1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact .right .bottom {
+  width: 400px;
+  height: 250px;
+  background-image: url(../images/farm2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

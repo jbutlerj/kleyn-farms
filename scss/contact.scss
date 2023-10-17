@@ -1,0 +1,101 @@
+.contact {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 500px;
+    margin: 100px auto 0 auto;
+    background-color: var(--theme-dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+        width: 60%;
+        color: var(--theme-cloud);
+        padding: 30px;
+
+        h1 {
+            font-family: var(--gsr);
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: var(--gsr);
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        form {
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            input {
+                width: 70%;
+                height: 60px;
+                margin-bottom: 15px;
+                padding: 21px;
+                border: none;
+                background-color: var(--theme-light-green);
+                font-family: var(--pts);
+                font-size: 18px;
+                color: var(--theme-cloud);
+            }
+
+            input::placeholder {
+                color: var(--theme-cloud);
+            }
+
+            a {
+                text-decoration: none;
+                margin-top: 10px;
+
+                .submitBTN {
+                    width: 200px;
+                    height: 60px;
+                    padding: 16px;
+                    background-color: var(--theme-light-green);
+                    font-family: var(--pts);
+                    font-size: 22px;
+                    color: var(--theme-cloud);
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 40%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .top {
+            width: 400px;
+            height: 250px;
+            margin-bottom: 20px;
+            background-image: url(../images/corn1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bottom {
+            width: 400px;
+            height: 250px;
+            background-image: url(../images/farm2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
